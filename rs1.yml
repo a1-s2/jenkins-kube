@@ -15,7 +15,7 @@ spec:
      name: myweb-pod
      labels:
        env:production
-       location: "India"
+       location: "IN"
      spec:
         containers:
         - name: myweb-con
