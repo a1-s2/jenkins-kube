@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: web-con
-        image: raktim00/httpd:v1
+        image: vimal13/apache-webserver-php
