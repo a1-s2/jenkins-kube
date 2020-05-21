@@ -14,7 +14,7 @@ spec:
      metadata: 
      name: web-pod
      labels:
-       env:  dev
+      env: dev
     spec:
       containers:
       - name: web-con
