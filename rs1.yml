@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: myweb-rs
+  name: web-rs
 spec:
   replicas: 5
   selector:
@@ -10,12 +10,12 @@ spec:
 #    matchExpressions:
 #      - { key: env, operator: In, values: [dev] }
 #      - { key: location, operator: In, values: [India] }
-  template: 
-     metadata: 
+  template:
+    metadata:
      name: web-pod
      labels:
-      env: dev
+       env: dev
     spec:
       containers:
       - name: web-con
-        image: vimal13/apache-webserver-php
+        image: raktim00/httpd:v1
