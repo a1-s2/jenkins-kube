@@ -11,7 +11,7 @@ spec:
 #      - { key: env, operator: In, values: [dev] }
 #      - { key: location, operator: In, values: [India] }
   template: 
-    metadata:
+     metadata:
      name: web-pod
      labels:
        env: dev
