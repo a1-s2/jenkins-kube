@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: myweb-rs
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       env: dev
@@ -11,7 +11,7 @@ spec:
 #      - { key: env, operator: In, values: [dev] }
 #      - { key: location, operator: In, values: [India] }
   template: 
-     metadata:
+     metadata: 
      name: web-pod
      labels:
        env: dev
